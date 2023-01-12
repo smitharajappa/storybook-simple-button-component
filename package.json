@@ -1,5 +1,6 @@
 {
-  "name": "new-frontend-assignment",
+  "homepage": "http://smitharajappa.github.io/storybook-simple-button-component",
+  "name": "storybook-simple-button-component",
   "version": "0.1.0",
   "private": true,
   "dependencies": {
@@ -15,8 +16,10 @@
     "test": "react-scripts test",
     "eject": "react-scripts eject",
     "storybook": "start-storybook -p 6006",
-    "build-storybook": "build-storybook",
-    "start": "start-storybook -p 6006"
+    "start": "start-storybook -p 6006",
+    "predeploy": "npm run build-storybook",
+    "deploy-storybook": "gh-pages -d storybook-static",
+    "build-storybook": "build-storybook"
   },
   "eslintConfig": {
     "extends": [
@@ -57,6 +60,7 @@
     "@storybook/preset-create-react-app": "^4.0.1",
     "@storybook/react": "^6.4.19",
     "@storybook/testing-library": "^0.0.9",
+    "gh-pages": "^4.0.0",
     "webpack": "^5.69.1"
   }
 }
